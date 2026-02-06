@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #1c0a01;
+  --red-color: #9E3434;
+  --green-color: #4C883A;
+  --varuna: 'VARUNA', sans-serif;
+  --pangaia: 'PP Pangaia', sans-serif;
+}
+
+
+h1 {
+  font-family: var(--varuna);
+  font-size: 3.5rem;
+  color: var(--red-color);
+  letter-spacing: 2px;
+  padding: 2rem 2px;
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 6rem;
+}
+
+.quem-somos p {
+  font-family: var(--pangaia);
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+
+}
+
+main img {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: white 0px 0px 30px;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.cdnfonts.com/css/varuna');
+@import url('https://fonts.cdnfonts.com/css/pp-pangaia');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1c0a01;
+  --red-color: #9E3434;
+  --green-color: #4C883A;
+  --varuna: 'VARUNA', sans-serif;
+  --pangaia: 'PP Pangaia', sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+ul{
+  display: flex;
+  gap: 100px;
+  padding-top: 3rem;
+  padding-right: 6rem;
+  justify-content: end;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  font-family: var(--pangaia);
+  font-size: xx-large;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--green-color);
+  transition: 0.3s ease;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1024px) {
+  ul {
+    justify-content: center;
+    padding-right: 0;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+}

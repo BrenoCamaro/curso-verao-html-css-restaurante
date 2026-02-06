@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1c0a01;
+    --red-color: #9E3434;
+    --green-color: #4C883A;
+    --varuna: 'VARUNA', sans-serif;
+    --pangaia: 'PP Pangaia', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 2rem;
+}
+
+.logo {
+    width: 30rem;
+}
+
+.pizza {
+    width: 40rem;
+    height: 20rem;
+    transform: translateX(40%) translateY(5%); 
+    margin-bottom: 2rem;
+}
+
+.hero {
+    font-family: var(--varuna);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero > h1 {
+    color: var(--red-color);
+    font-size: 4.5rem;
+    padding-bottom: 10px;
+    text-align: end;
+}
+
+.hero > p {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: end;
+}
+
+h1, p, .buttons {
+    transform: translateX(15%);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.btn {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: var(--varuna);
+    font-size: medium;
+    transition: 0.3s ease
+}
+
+.btn1 {
+    background-color: var(--green-color);
+    color: white;
+    border: var(--green-color) solid 5px;
+    transition: 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: white;
+    border: var(--green-color) solid 5px;
+    color: var(--green-color);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.btn2 {
+    background-color: var(--red-color);
+    color: white;
+    border: var(--red-color) solid 5px;
+    transition: 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: white;
+    border: var(--red-color) solid 5px;
+    color: var(--red-color);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .logo {
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero {
+        align-items: center;
+        width: 100%;
+    }
+
+    .pizza {
+        width: 80%;
+        height: auto;
+        transform: none;
+        margin-bottom: 2rem;
+    }
+
+    .hero > h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 15rem;
+    }
+
+    .hero > h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero > p {
+        padding: 0 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
